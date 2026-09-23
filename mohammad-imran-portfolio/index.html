@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mohammed Imran — Creative Portfolio</title>
+<meta name="description" content="Portfolio of Mohammed Imran, a computer science engineer building useful connected systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff;--wash:#f5f5f3;--ink:#111;--muted:#747474;--line:#dededb;--serif:Newsreader,Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--mono:'DM Mono',monospace;--ease:cubic-bezier(.16,1,.3,1)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 var(--sans)}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 72px));margin:auto}.topbar{height:74px;display:flex;align-items:center;border-bottom:1px solid var(--line);font:500 .66rem var(--mono);color:var(--muted)}.logo{font:700 1rem var(--sans);letter-spacing:-.07em;color:var(--ink);margin-right:auto}.topbar nav{display:flex;gap:26px;align-items:center}.topbar nav a:hover{color:var(--ink)}.contact{border:1px solid var(--ink);border-radius:99px;padding:8px 13px;color:var(--ink)!important}.contact:hover{background:var(--ink);color:#fff!important}
+.page{min-height:calc(100vh - 74px);padding:54px 0 72px;display:flex;flex-direction:column;justify-content:center}.cover{background:var(--wash)}.cover-grid{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}.cover-copy{padding:35px 0}.kicker{font:500 .64rem var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin:0 0 35px}.cover h1{font-size:clamp(4.5rem,9.5vw,9.5rem);line-height:.78;letter-spacing:-.13em;margin:0}.cover h1 em{font:600 clamp(4.7rem,9.8vw,9.8rem)/.78 var(--serif);letter-spacing:-.08em}.cover-intro{color:var(--muted);max-width:410px;line-height:1.8;margin:38px 0 0}.cover-meta{display:flex;justify-content:space-between;margin-top:55px;padding-top:14px;border-top:1px solid #d6d6d2;font:500 .62rem var(--mono);color:var(--muted)}.cover-photo{position:relative;background:#e9e9e6;padding:16px;transform:rotate(2deg)}.cover-photo img{display:block;width:100%;height:555px;object-fit:cover;object-position:center 14%;filter:grayscale(1)}.cover-photo:after{content:'PERSONAL PORTFOLIO';position:absolute;top:30px;left:30px;background:#fff;padding:6px 9px;font:500 .58rem var(--mono)}
+.page-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:48px}.page-number{font:500 .65rem var(--mono);color:var(--muted)}.page h2{font-size:clamp(3.2rem,7vw,7rem);line-height:.82;letter-spacing:-.12em;margin:0}.page h2 em{font:600 clamp(3.4rem,7.2vw,7.2rem)/.8 var(--serif);letter-spacing:-.08em}.split{display:grid;grid-template-columns:1fr 1fr;gap:95px;align-items:center}.copy{max-width:430px;color:var(--muted);line-height:1.85}.copy strong{color:var(--ink)}.mini-meta{display:flex;gap:24px;margin-top:38px;padding-top:14px;border-top:1px solid var(--line);font:500 .62rem var(--mono);color:var(--muted)}.mini-image{background:var(--wash);padding:14px}.mini-image img{display:block;width:100%;height:380px;object-fit:cover;filter:grayscale(1)}
+.work-page{background:var(--wash)}.work-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:40px}.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.work-card{background:#fff}.work-card img{display:block;width:100%;height:310px;object-fit:cover;filter:grayscale(.6);transition:transform .7s var(--ease)}.work-card:hover img{transform:scale(1.04)}.work-card figure{overflow:hidden;margin:0}.work-info{padding:24px}.work-info h3{font-size:2.15rem;line-height:.9;letter-spacing:-.09em;margin:13px 0}.work-info p{color:var(--muted);font-size:.83rem;line-height:1.7;min-height:58px}.work-number{font:500 .62rem var(--mono);color:var(--muted)}.links{display:flex;gap:18px;padding-top:15px;border-top:1px solid var(--line);font:600 .67rem var(--sans)}.links a:hover{text-decoration:underline}
+.skills{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px}.skill-list{border-top:1px solid var(--line)}.skill{display:grid;grid-template-columns:58px 1fr;border-bottom:1px solid var(--line);padding:20px 0}.skill span{font:500 .64rem var(--mono);color:var(--muted)}.skill h3{font-size:1rem;margin:0 0 5px}.skill p{font-size:.82rem;color:var(--muted);margin:0}.closing{background:var(--ink);color:#fff}.closing .kicker,.closing .copy{color:#aaa}.closing h2 em{color:#fff}.closing .email{display:flex;justify-content:space-between;border-bottom:1px solid #777;padding:15px 0;font-size:1.05rem}.closing .email:hover{color:#aaa}.socials{display:flex;gap:24px;margin-top:17px;font:500 .64rem var(--mono);color:#aaa}.socials a:hover{color:#fff}footer{padding:22px 0 30px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font:500 .61rem var(--mono);color:var(--muted)}.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.reveal.show{opacity:1;transform:none}
+@media(max-width:760px){.wrap{width:calc(100% - 36px)}.topbar{height:68px}.topbar nav a:not(.contact){display:none}.page{min-height:auto;padding:72px 0}.cover-grid,.split,.skills{grid-template-columns:1fr;gap:42px}.cover h1{font-size:clamp(4rem,19vw,7rem)}.cover h1 em{font-size:clamp(4.2rem,19.4vw,7.2rem)}.cover-photo{transform:none}.cover-photo img{height:390px}.cover-meta{margin-top:38px}.page-heading,.work-head{display:block}.page-number{display:block;margin-top:18px}.page h2{font-size:clamp(3.1rem,15vw,6rem)}.page h2 em{font-size:clamp(3.3rem,15.3vw,6.2rem)}.split{gap:35px}.mini-image img{height:300px}.work-grid{grid-template-columns:1fr}.work-card img{height:250px}.skills{gap:35px}footer{display:block;line-height:2.4}}
+</style>
+<style>
+  .topbar nav{margin-left:auto;gap:30px}.topbar nav a{font-weight:600;color:#26313e}
+  .cover-grid{grid-template-columns:1.08fr .92fr;gap:100px;align-items:center}.cover-copy{padding-top:22px}.cover h1{font-family:'Manrope',Arial,sans-serif!important;font-weight:500!important;letter-spacing:-.085em!important;line-height:.9!important}.cover h1 em{font-family:'Manrope',Arial,sans-serif!important;font-style:normal!important;font-weight:500!important;letter-spacing:-.085em!important}
+  .cover-intro{max-width:480px;margin-top:34px}.cover .kicker:before{content:'';display:inline-block;width:25px;height:2px;background:#356fe5;margin:0 10px 3px 0}.cover-photo{justify-self:end}
+  .page h2,.page h2 em{font-family:'Manrope',Arial,sans-serif!important;font-style:normal!important;font-weight:500!important;letter-spacing:-.07em!important}
+</style>
+<style>
+  .cover h1,.cover h1 em,.page h2,.page h2 em,.work-info h3,.skill h3{letter-spacing:-.015em!important;word-spacing:.035em}
+  .cover-intro,.copy,.intro-copy p,.work-info p,.skill p{letter-spacing:.005em}
+</style>
+<style>
+  .skills h2{font-size:clamp(1.9rem,3.7vw,3.8rem)!important;line-height:1!important}.skills h2 em{font-size:clamp(2rem,3.9vw,4rem)!important;line-height:.96!important}
+  @media(max-width:760px){.skills h2{font-size:clamp(2rem,9vw,3.8rem)!important}.skills h2 em{font-size:clamp(2.1rem,9.3vw,4rem)!important}}
+</style>
+<style>
+  .work-head h2{font-size:clamp(1.9rem,3.7vw,3.8rem)!important;line-height:1!important}.work-head h2 em{font-size:clamp(2rem,3.9vw,4rem)!important;line-height:.96!important}
+  @media(max-width:760px){.work-head h2{font-size:clamp(2rem,9vw,3.8rem)!important}.work-head h2 em{font-size:clamp(2.1rem,9.3vw,4rem)!important}}
+</style>
+<style>
+  .intro h2{font-size:clamp(1.9rem,3.7vw,3.8rem)!important;line-height:1!important}.intro h2 em{font-size:clamp(2rem,3.9vw,4rem)!important;line-height:.96!important}
+  @media(max-width:760px){.intro h2{font-size:clamp(2rem,9vw,3.8rem)!important}.intro h2 em{font-size:clamp(2.1rem,9.3vw,4rem)!important}}
+</style>
+<style>
+  .cover h1{font-size:clamp(3.3rem,6.8vw,6.8rem)!important}.cover h1 em{font-size:clamp(3.5rem,7vw,7.1rem)!important}
+  @media(max-width:760px){.cover h1{font-size:clamp(3.1rem,14vw,5.7rem)!important}.cover h1 em{font-size:clamp(3.3rem,14.3vw,5.9rem)!important}}
+</style>
+<style>
+  .cover-photo:after{display:none!important}
+</style>
+<style>
+  .cover-photo{border-radius:50%;overflow:hidden;padding:10px;box-shadow:18px 18px 0 #d9efec;transform:none!important}
+  .cover-photo img{border-radius:50%;height:400px;object-position:center 14%}
+  .cover-photo:before{inset:10px;border-radius:50%}.cover-photo:after{top:24px;left:24px}
+  @media(max-width:760px){.cover-photo{padding:8px}.cover-photo img{height:320px}.cover-photo:before{inset:8px}}
+</style>
+<style>
+  .page h2{font-size:clamp(2.35rem,5vw,5.1rem);line-height:.98;letter-spacing:-.065em}
+  .page h2 em{font-size:clamp(2.5rem,5.2vw,5.3rem);line-height:.94;letter-spacing:-.045em}
+  .work-info h3{font-size:clamp(1.65rem,2.9vw,3rem);line-height:1.02;letter-spacing:-.055em}
+  .skill h3{font-size:.96rem;line-height:1.35;letter-spacing:-.02em}.skill p{line-height:1.9}
+  .page-heading,.work-head{margin-bottom:56px}.intro-copy p,.copy p{margin-bottom:22px}
+  @media(max-width:760px){.page h2{font-size:clamp(2.4rem,12vw,5rem)}.page h2 em{font-size:clamp(2.55rem,12.3vw,5.2rem)}.work-info h3{font-size:2rem}.page-heading,.work-head{margin-bottom:38px}}
+</style>
+<style>
+  .page h2{font-size:clamp(2rem,4vw,4.25rem)}.page h2 em{font-size:clamp(2.15rem,4.2vw,4.45rem)}.work-info h3{font-size:clamp(1.45rem,2.4vw,2.5rem)}
+  @media(max-width:760px){.page h2{font-size:clamp(2.05rem,10vw,4.3rem)}.page h2 em{font-size:clamp(2.2rem,10.3vw,4.5rem)}.work-info h3{font-size:1.75rem}}
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap');
+body,.topbar,.topbar nav a,.contact,.copy,.cover-intro,.intro-copy,.work-info,.skill,.links,.hero-links,.socials{font-family:'Manrope',Arial,sans-serif!important}
+  .cover h1,.page h2,.work-info h3,.logo{font-family:'Manrope',Arial,sans-serif!important}.cover h1 em,.page h2 em{font-family:'DM Serif Display',Georgia,serif!important;font-style:italic;font-weight:400}
+</style>
+<style>
+  .cover-photo{border-radius:50%!important;overflow:hidden!important;transform:none!important}
+  .cover-photo img{border-radius:50%!important}
+  .cover-photo:before{border-radius:50%!important}
+</style>
+<style>
+  .cover-photo{width:300px!important;height:300px!important;justify-self:end;padding:8px!important;box-shadow:14px 14px 0 #d9efec!important}
+  .cover-photo img{width:100%!important;height:284px!important}
+  @media(max-width:760px){.cover-photo{width:250px!important;height:250px!important;justify-self:center}.cover-photo img{height:234px!important}}
+</style>
+<style>
+  .cover-photo,.cover-photo:hover,.cover-photo:focus,.cover-photo:active{transform:none!important;animation:none!important;opacity:1!important;visibility:visible}
+</style>
+<style>
+  body{font-size:14px}
+  .cover h1{font-size:clamp(4rem,8.3vw,8.2rem)}.cover h1 em{font-size:clamp(4.2rem,8.6vw,8.5rem)}
+  .page h2{font-size:clamp(2.8rem,6.2vw,6.2rem)}.page h2 em{font-size:clamp(3rem,6.4vw,6.4rem)}
+  .work-info h3{font-size:clamp(1.8rem,3.4vw,3.5rem)}
+  .focusable{cursor:pointer;transform-origin:left center;transition:transform .3s cubic-bezier(.16,1,.3,1),color .3s ease,text-shadow .3s ease}.focusable:hover{transform:scale(1.035);color:#193f86}.focusable.is-selected{transform:scale(1.08);color:#193f86;text-shadow:0 8px 20px rgba(25,63,134,.16)}
+  @media(max-width:760px){.cover h1{font-size:clamp(3.6rem,17vw,6.5rem)}.cover h1 em{font-size:clamp(3.8rem,17.4vw,6.7rem)}.page h2{font-size:clamp(2.7rem,14vw,5.7rem)}.page h2 em{font-size:clamp(2.9rem,14.3vw,5.9rem)}}
+</style>
+<script>
+  const focusTargets=document.querySelectorAll('h1,h2,h3,.kicker,.logo,.page-number,.number,.work-number,.skill span');
+  focusTargets.forEach(target=>{target.classList.add('focusable');target.addEventListener('click',event=>{event.stopPropagation();focusTargets.forEach(item=>item.classList.remove('is-selected'));target.classList.add('is-selected')})});
+  document.addEventListener('click',()=>focusTargets.forEach(item=>item.classList.remove('is-selected')));
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelector('.cover .kicker').textContent='Computer science engineer / Bengaluru';
+    document.querySelector('.cover h1').innerHTML='Mohammed<br><em>Imran.</em>';
+    document.querySelector('.cover-intro').textContent='I build practical IoT, AI and software projects that solve real problems and are easy to understand.';
+    document.querySelector('.intro h2').innerHTML='I build practical<br><em>software.</em>';
+    document.querySelector('.intro-copy p').textContent='I am a final-year computer science engineering student focused on IoT, cyber security and intelligent applications. I enjoy turning an idea into a working system people can actually use.';
+    document.querySelector('.intro-copy p:nth-of-type(2)').innerHTML='<strong>What I bring:</strong> curiosity, reliable execution and attention to detail.';
+    document.querySelector('.work-head .kicker').textContent='02 / Projects';
+    document.querySelector('.work-head h2').innerHTML='My<br><em>projects.</em>';
+    document.querySelector('.work-head p')?.remove();
+    document.querySelector('.skills .kicker').textContent='03 / Strengths';
+    document.querySelector('.closing .kicker').textContent='04 / Contact';
+    document.querySelector('.closing h2').innerHTML='Let\'s work<br><em>together.</em>';
+  });
+</script>
+<script>
+  document.querySelector('.cover .kicker').textContent='Computer science engineer / Bengaluru';
+  document.querySelector('.cover h1').innerHTML='Mohammed<br><em>Imran.</em>';
+  document.querySelector('.cover-intro').textContent='I build practical IoT, AI and software projects that solve real problems and are easy to understand.';
+  document.querySelector('.intro h2').innerHTML='I build practical<br><em>software.</em>';
+  document.querySelector('.intro-copy p').textContent='I am a final-year computer science engineering student focused on IoT, cyber security and intelligent applications. I enjoy turning an idea into a working system people can actually use.';
+  document.querySelector('.intro-copy p:nth-of-type(2)').innerHTML='<strong>What I bring:</strong> curiosity, reliable execution and attention to detail.';
+  document.querySelector('.work-head .kicker').textContent='02 / Projects';
+  document.querySelector('.work-head h2').innerHTML='My<br><em>projects.</em>';
+  document.querySelector('.work-head p')?.remove();
+  document.querySelector('.skills .kicker').textContent='03 / Strengths';
+  document.querySelector('.closing .kicker').textContent='04 / Contact';
+  document.querySelector('.closing h2').innerHTML='Let’s work<br><em>together.</em>';
+</script>
+<style>
+  .cover-photo{filter:drop-shadow(12px 18px 18px rgba(20,35,70,.18));transition:filter .4s ease,transform .4s ease,box-shadow .4s ease}.cover-photo:hover{filter:drop-shadow(18px 24px 24px rgba(20,35,70,.24))}
+  .cover-photo:before{display:block;content:'';position:absolute;inset:14px;background:linear-gradient(135deg,rgba(25,63,134,.18),transparent 42%,rgba(255,255,255,.18));z-index:1;pointer-events:none;opacity:.75;transition:opacity .4s ease,background .4s ease}
+  .cover-photo:after{z-index:2}.cover-photo:hover:before{opacity:.38;background:linear-gradient(135deg,rgba(25,63,134,.28),transparent 45%,rgba(255,255,255,.25))}
+  .cover h1,.page h2{ text-shadow:0 7px 18px rgba(17,17,17,.08)}
+  .work-card{box-shadow:0 10px 26px rgba(17,17,17,.08)}.work-card:hover{box-shadow:0 22px 42px rgba(17,17,17,.15)}
+  .work-card h3{ text-shadow:0 4px 12px rgba(17,17,17,.08)}
+  .contact{box-shadow:0 10px 28px rgba(17,17,17,.08)}
+</style>
+<style>
+  .focusable{position:relative;border-radius:8px;padding:2px 5px;margin:-2px -5px;transition:opacity .35s ease,transform .35s cubic-bezier(.16,1,.3,1),color .35s ease,background .35s ease,box-shadow .35s ease,filter .35s ease}
+  .focusable:hover,.focusable.is-selected{z-index:5;background:rgba(255,255,255,.9);color:#193f86;box-shadow:0 8px 22px rgba(25,63,134,.16),0 0 0 1px rgba(25,63,134,.12);transform:scale(1.045)}
+  body:has(.focusable:hover) .focusable:not(:hover){opacity:.28;filter:blur(.25px)}
+  body:has(.focusable.is-selected) .focusable:not(.is-selected){opacity:.36}
+  .focusable.is-selected:after{content:'FOCUS';position:absolute;left:8px;top:-18px;font:500 8px var(--mono);letter-spacing:.12em;color:#193f86;opacity:.8;pointer-events:none}
+  .cover-intro,.copy,.work-info p,.intro-copy p,.skill p,.email,.links a,.hero-links a{transition:opacity .35s ease,transform .35s ease,color .35s ease,background .35s ease,box-shadow .35s ease}
+  .links a:hover,.hero-links a:hover,.email:hover{background:rgba(25,63,134,.06);box-shadow:0 5px 16px rgba(25,63,134,.1)}
+  .cover-copy .kicker,.cover-copy h1,.cover-intro,.cover-meta{opacity:1!important;animation:none!important}
+</style>
+<script>
+  const allTextFocus=document.querySelectorAll('.cover-intro,.copy,.work-info p,.intro-copy p,.skill p,.email,.links a,.hero-links a,.topbar nav a');
+  allTextFocus.forEach(item=>{item.classList.add('focusable');item.addEventListener('click',event=>{if(!item.matches('a')){event.stopPropagation();document.querySelectorAll('.focusable').forEach(node=>node.classList.remove('is-selected'));item.classList.add('is-selected')}})});
+</script>
+</head>
+<body>
+<header class="topbar wrap"><a class="logo" href="#top">Mohammed Imran.</a><nav><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a class="contact" href="mailto:mohammadimran2194@gmail.com">Contact</a></nav></header>
+<main id="top">
+<section class="page cover"><div class="cover-grid wrap"><div class="cover-copy"><p class="kicker">Personal portfolio / 2026</p><h1>Creative<br><em>systems.</em></h1><p class="cover-intro">I’m Mohammed Imran — a computer science engineer building connected systems, useful interfaces and intelligent tools.</p><div class="cover-meta"><span>Bengaluru, India</span><span>IoT · AI · Software</span></div></div><div class="cover-photo"><img src="assets/profile.jpeg" alt="Portrait of Mohammed Imran"></div></div></section>
+<section id="about" class="page wrap reveal"><div class="page-heading"><p class="kicker">01 / Introduction</p><span class="page-number">About me</span></div><div class="split"><div><h2>Make technology feel <em>obvious.</em></h2><div class="mini-meta"><span>COMPUTER SCIENCE</span><span>ENGINEERING</span></div></div><div class="copy"><p>I’m a final-year computer science engineering student specialising in IoT and cyber security with blockchain technology. I enjoy moving between hardware, data and interfaces — understanding the full path from an idea to something people can use.</p><p><strong>My focus:</strong> clear products, reliable systems and thoughtful details.</p></div></div></section>
+<section id="work" class="page work-page reveal"><div class="wrap"><div class="work-head"><div><p class="kicker">02 / Selected work</p><h2>Project<br><em>portfolio.</em></h2></div><span class="page-number">Two focused builds</span></div><div class="work-grid"><article class="work-card"><figure><img src="assets/project-crash-realistic.png" alt="SafeDrive vehicle safety system"></figure><div class="work-info"><span class="work-number">01 / IOT SAFETY SYSTEM</span><h3>SafeDrive command center</h3><p>Detects impact, alcohol and smoke events, stops the motor and prepares a GPS-backed emergency alert.</p><div class="links"><a href="safety-car-demo.html">Live demo ↗</a><a href="https://github.com/Imran0219/IOT-based-System-safety-car-detection-and-prevention" target="_blank" rel="noopener">GitHub ↗</a></div></div></article><article class="work-card"><figure><img src="assets/project-jarvis-stylized.png" alt="Jarvis AI assistant"></figure><div class="work-info"><span class="work-number">02 / AI ASSISTANT</span><h3>Jarvis for next actions</h3><p>A voice-and-text assistant concept that turns everyday intentions into one clear, useful next step.</p><div class="links"><a href="jarvis-demo.html">Try Jarvis ↗</a><a href="https://github.com/Imran0219/nova" target="_blank" rel="noopener">GitHub ↗</a></div></div></article></div></div></section>
+<section id="skills" class="page wrap reveal"><div class="skills"><div><p class="kicker">03 / Personal skills</p><h2>How I<br><em>work.</em></h2></div><div class="skill-list"><article class="skill"><span>01</span><div><h3>Understand the work</h3><p>Turn loose requirements into the flow, constraints and decisions that matter.</p></div></article><article class="skill"><span>02</span><div><h3>Build the system</h3><p>Shape the interface, services and data around a product that can be understood and maintained.</p></div></article><article class="skill"><span>03</span><div><h3>Ship with intent</h3><p>Validate edge cases, tighten the experience and leave a clearer path forward.</p></div></article></div></div></section>
+<section class="page closing reveal"><div class="split wrap"><div><p class="kicker">04 / Let’s connect</p><h2>Let’s make it <em>useful.</em></h2></div><div class="copy"><p>Open to software development, IoT and data opportunities. If the problem is interesting, I’d like to hear what you’re building.</p><a class="email" href="mailto:mohammadimran2194@gmail.com">mohammadimran2194@gmail.com <span>↗</span></a><div class="socials"><a href="https://github.com/Imran0219" target="_blank" rel="noopener">GitHub</a><a href="tel:+916281466450">+91 62814 66450</a></div></div></div></section>
+</main><footer class="wrap"><span>© 2026 Mohammed Imran</span><span>Bengaluru · India</span></footer>
+<script>const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('show')}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));setTimeout(()=>document.querySelectorAll('.reveal').forEach(el=>el.classList.add('show')),900);</script>
+</body></html>
+<style>
+  .cover-photo{background:transparent;padding:0;transform:none;border-radius:50% 50% 16% 16%;box-shadow:22px 26px 0 #193f86;transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s ease}
+  .cover-photo:hover{transform:translateY(-8px) rotate(1deg);box-shadow:28px 34px 0 #193f86}
+  .cover-photo img{filter:none;height:590px;border-radius:50% 50% 16% 16%;object-fit:cover;object-position:center 14%;transition:transform .8s cubic-bezier(.16,1,.3,1),filter .5s ease}
+  .cover-photo:hover img{transform:scale(1.025);filter:saturate(1.08)}
+  .cover-photo:before{content:'';position:absolute;inset:-22px -30px -16px -30px;border:1px dashed #b8c8e6;border-radius:50%;pointer-events:none;animation:orbit 14s linear infinite}
+  .cover-photo:after{top:28px;left:28px;transition:transform .35s ease,background .35s ease}
+  .cover-photo:hover:after{transform:translateY(-3px);background:#193f86;color:#fff}
+  .mini-image{background:#eef4ff}.mini-image img{filter:none;transition:transform .8s cubic-bezier(.16,1,.3,1)}.mini-image:hover img{transform:scale(1.03)}
+  .work-card{box-shadow:0 8px 24px rgba(17,17,17,.06);transition:transform .4s cubic-bezier(.16,1,.3,1),box-shadow .4s ease}.work-card:hover{transform:translateY(-8px);box-shadow:0 20px 38px rgba(17,17,17,.12)}.work-card img{filter:none}
+  a,.links a,.socials a,.logo,.contact,.email{transition:color .25s ease,background .25s ease,border-color .25s ease,transform .25s ease}
+  .links a:hover,.socials a:hover{transform:translateX(4px)}.links a::after,.hero-links a::after{content:' ↗';display:inline-block;transition:transform .25s ease}.links a:hover::after,.hero-links a:hover::after{transform:translate(3px,-3px)}
+  .contact:hover{transform:translateY(-2px)}.skill{transition:padding-left .35s ease;background:linear-gradient(90deg,transparent,transparent)}.skill:hover{padding-left:10px}.skill span{transition:transform .3s ease;display:inline-block}.skill:hover span{transform:translateX(5px)}
+  .links a::after,.hero-links a::after{content:none}
+  .cover-photo{border-radius:0;box-shadow:22px 26px 0 #193f86}
+  .cover-photo img{border-radius:0}
+  .cover-photo:before{border-radius:0;inset:-16px -20px -12px -20px}
+  .cover-photo:before{display:none}
+  body{background:linear-gradient(120deg,#fff 0%,#fff 45%,#f7f9ff 100%);background-size:180% 180%;animation:pageBreath 18s ease-in-out infinite alternate}
+  .cover-copy .kicker,.cover-copy h1,.cover-intro,.cover-meta,.cover-photo{opacity:0;animation:riseIn .9s cubic-bezier(.16,1,.3,1) forwards}.cover-copy .kicker{animation-delay:.05s}.cover-copy h1{animation-delay:.16s}.cover-intro{animation-delay:.28s}.cover-meta{animation-delay:.4s}.cover-photo{animation-delay:.2s}
+  .page.reveal.show .page-heading,.page.reveal.show .split>div,.page.reveal.show .work-head,.page.reveal.show .work-card,.page.reveal.show .skills>div,.page.reveal.show .skill,.page.reveal.show .email,.page.reveal.show .socials{animation:riseIn .75s cubic-bezier(.16,1,.3,1) both}
+  .page.reveal.show .work-card:nth-child(2),.page.reveal.show .skill:nth-child(2){animation-delay:.12s}.page.reveal.show .skill:nth-child(3){animation-delay:.22s}.page.reveal.show .split>div:nth-child(2){animation-delay:.14s}
+  .work-card,.skill,.mini-image,.links a,.hero-links a,.contact{will-change:transform}.work-card figure{overflow:hidden}.work-card figure:after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.32) 50%,transparent 65%);transform:translateX(-120%);transition:transform .8s ease;pointer-events:none}.work-card figure{position:relative}.work-card:hover figure:after{transform:translateX(120%)}
+  .cover-photo{will-change:transform}.cover-photo img{will-change:transform}.logo:hover{transform:translateY(-2px)}.kicker{transition:letter-spacing .35s ease}.kicker:hover{letter-spacing:.2em}
+  .cover-photo{width:min(100%,455px);justify-self:end}.cover-photo img{height:480px}
+  .cover-photo{transform:rotate(2deg)}.cover-photo:hover{transform:translateY(-8px) rotate(3deg)}
+  .cover-photo{width:min(100%,400px);padding:14px;background:#fff;border:1px solid #dededb;box-shadow:18px 18px 0 #d9efec;transform:rotate(2deg)}
+  .cover-photo{opacity:1!important;visibility:visible;animation:none;transform:rotate(10deg)}
+  .cover-photo:hover,.cover-photo:focus,.cover-photo:active{opacity:1!important;visibility:visible;transform:translateY(-6px) rotate(0deg);box-shadow:22px 24px 0 #d9efec}
+  .cover-photo img{height:430px}
+  @keyframes portraitSettle{0%{opacity:1;transform:translateX(24px) rotate(-10deg)}70%{opacity:1;transform:translateX(-4px) rotate(5deg)}100%{opacity:1;transform:translateX(0) rotate(10deg)}}
+  @media(max-width:760px){.cover-photo{width:100%;padding:12px;box-shadow:14px 15px 0 #d9efec}.cover-photo img{height:340px}}
+  .work-grid{grid-template-columns:1fr;gap:26px}.work-card{display:grid;grid-template-columns:1.08fr .92fr;align-items:stretch}.work-card:nth-child(2){grid-template-columns:.92fr 1.08fr}.work-card:nth-child(2) figure{order:2}.work-card figure{height:100%}.work-card img{height:100%;min-height:390px}.work-info{display:flex;flex-direction:column;justify-content:center;padding:42px}.work-info p{min-height:0}
+  @media(max-width:760px){.work-card,.work-card:nth-child(2){display:block}.work-card:nth-child(2) figure{order:initial}.work-card img{height:280px;min-height:280px}.work-info{padding:30px}}
+  @keyframes riseIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}@keyframes pageBreath{from{background-position:0% 50%}to{background-position:100% 50%}}
+  @media(prefers-reduced-motion:reduce){body{animation:none!important}.cover-copy .kicker,.cover-copy h1,.cover-intro,.cover-meta,.cover-photo,.page.reveal.show .page-heading,.page.reveal.show .split>div,.page.reveal.show .work-head,.page.reveal.show .work-card,.page.reveal.show .skills>div,.page.reveal.show .skill,.page.reveal.show .email,.page.reveal.show .socials{animation:none!important;opacity:1!important}}
+  @media(max-width:760px){.cover-photo{width:100%;box-shadow:15px 18px 0 #193f86}.cover-photo img{height:340px}.cover-photo:before{inset:-12px -15px -9px -15px}}
+  @keyframes orbit{to{transform:rotate(360deg)}}
+  @media(max-width:760px){.cover-photo{box-shadow:15px 18px 0 #193f86}.cover-photo img{height:390px}.cover-photo:before{inset:-14px -18px -10px -18px}}
+  @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+<style>
+  body{font-size:17px}.topbar,.topbar nav a,.contact{font-size:.8rem}.kicker,.page-number,.number,.work-number,.skill span{font-size:.77rem}.cover-intro,.copy,.intro-copy p,.work-info p,.skill p{font-size:1.1rem;line-height:1.85}.mini-meta,.tags,.links,.hero-links,.socials{font-size:.76rem}.cover-meta{font-size:.74rem}
+  @media(max-width:760px){body{font-size:15px}.cover-intro,.copy,.intro-copy p,.work-info p,.skill p{font-size:.96rem}.topbar,.topbar nav a,.contact{font-size:.7rem}}
+</style>
+<script>
+  const resumeHref='assets/Mohammed Imran Resume.pdf';
+  const nav=document.querySelector('.topbar nav');
+  if(nav&&!nav.querySelector('.resume-link')){const link=document.createElement('a');link.className='resume-link';link.href=resumeHref;link.download='Mohammed Imran Resume.pdf';link.textContent='Resume';nav.insertBefore(link,nav.querySelector('.contact'))}
+  const meta=document.querySelector('.cover-meta');
+  if(meta&&!meta.querySelector('.resume-link')){const link=document.createElement('a');link.className='resume-link';link.href=resumeHref;link.download='Mohammed Imran Resume.pdf';link.textContent='Download resume ↗';meta.appendChild(link)}
+</script>
